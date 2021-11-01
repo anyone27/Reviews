@@ -30,5 +30,38 @@ h1 {
 img {
     height: 200px;
     border-radius: 50%;
-    border: 2px solid aliceblue;
+    box-shadow: 10px -4px rgb(78, 169, 230);
+    margin: 20px;
+}
+
+.text {
+    width: 40vw;
+    font-size: 18pt;
+    color: rgb(78, 78, 78);
+    text-align: center;
+}
+
+button {
+    font-size: 24pt;
+    color: cadetblue;
+    
+}
+
+.buttons button {
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+#next {
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: rgba(1,1,1,0.3);
+}
+
+#random {
+    font-size: 15pt;
+    padding: 5px;
+    border-radius: 15px;
 }
