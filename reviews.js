@@ -46,7 +46,7 @@ let reviewCareer = document.getElementById("career");
 let reviewText = document.getElementById("review-text");
 
 btnRandom.addEventListener("click", function(){
-    number = randomNumber();
+    number = Math.floor(Math.random() * reviews.length);
     changeReview(number);
 });
 
@@ -74,14 +74,11 @@ btnPrevious.addEventListener("click", function() {
     }
 })
 
-function randomNumber() {
-    return random = Math.floor(Math.random() * reviews.length);
-}
-
 function changeReview(number) {
     let user = reviews[number];
     reviewImage.src = "static/" + user.picture;
-    reviewName.innerHTML = user.name;
-    reviewCareer.innerHTML = user.occupation;
-    reviewText.innerHTML = user.review;
+    reviewName.textContent = user.name;
+    reviewCareer.textContent = user.occupation;
+    reviewText.textContent = user.review;
+    count = number;
 }
