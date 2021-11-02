@@ -9,19 +9,21 @@ main {
     height: 100vh;
     display: flex;
     justify-content: space-around;
+    font-family: sans-serif;
 }
 
 .box {
-    border: 1px solid darkblue;
-    height: 50vh;
-    width: 50vw;
+    border: 2px solid grey;
+    height: auto;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    box-shadow:grey 3px 3px 5px, grey 0px 4px 50px 5px;
 }
 
 h1 {
-    font-family: sans-serif;
     font-size: 30pt;
     color: darkcyan;
     text-shadow: 1px 1px darkgrey;
@@ -31,11 +33,11 @@ img {
     height: 200px;
     border-radius: 50%;
     box-shadow: 10px -4px rgb(78, 169, 230);
-    margin: 20px;
+    margin: 20px 0px 0px 0px;
 }
 
 .text {
-    width: 40vw;
+    width: 80%;
     font-size: 18pt;
     color: rgb(78, 78, 78);
     text-align: center;
@@ -57,11 +59,29 @@ button {
 }
 
 button:hover {
-    background-color: rgba(1,1,1,0.3);
+    background-color: rgba(0,0,0,0.3);
 }
 
-#random {
-    font-size: 15pt;
-    padding: 5px;
+#surpriseMe {
+    font-size: 10pt;
+    padding: 5px 10px;
     border-radius: 15px;
+    margin: 10px;
+}
+
+.userInfo {
+    line-height: 1;
+    text-align: center;
+}
+
+#name {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
+
+#career {
+    font-weight: 100;
+    color: rgb(78, 169, 230);
+    padding: 0px;
 }
